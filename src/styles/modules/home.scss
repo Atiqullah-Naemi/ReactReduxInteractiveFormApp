@@ -1,0 +1,20 @@
+.home {}
+
+.dropdown-toggle:after {
+    content: none
+}
+
+#rule2,
+#rule3 {
+    display: none;
+}
+
+.show-rule-2,
+.show-rule-3 {
+    display: block !important;
+}
+
+.remove-rule2-btn,
+.remove-rule3-btn {
+    display: none;
+}

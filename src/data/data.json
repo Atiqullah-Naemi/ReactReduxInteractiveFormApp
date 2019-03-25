@@ -1,0 +1,87 @@
+{
+   "accessLists": [
+      {
+         "id": 0,
+         "name": "telstra-pri-in",
+         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "tags": {
+            "context": "snsw-dc3",
+            "dc": "dc3"
+         }
+      },
+      {
+         "id": 1,
+         "name": "telstra-sec-in",
+         "content": "Cras in nunc lobortis, porta enim et, iaculis justo. ",
+         "tags": {
+            "context": "snsw-dc3",
+            "dc": "dc3"
+         }
+      },
+      {
+         "id": 2,
+         "name": "ac3-in",
+         "content": "Fusce id nisl nec ex fringilla euismod. Vestibulum molestie eleifend hendrerit.",
+         "tags": {
+            "context": "snsw-dc2",
+            "dc": "dc2"
+         }
+      }
+   ],
+   "serviceObjects": [
+      {
+         "id": 0,
+         "protocol": "tcp",
+         "name": "name 1",
+         "ports": "8000",
+         "description": "Development HTTP"
+      },
+      {
+         "id": 1,
+         "protocol": "tcp-udp",
+         "name": "name 2",
+         "ports": "9000",
+         "description": "Phone System"
+      },
+      {
+         "id": 2,
+         "protocol": "udp",
+         "name": "name 3",
+         "ports": "1 1024",
+         "description": "Phones"
+      },
+      {
+         "id": 3,
+         "protocol": "icmp type 0 code 99",
+         "name": "name 4",
+         "description": "Special ICMPs"
+      }
+   ],
+   "networkObjects": [
+      {
+         "id": 0,
+         "name": "PCF_NonProd_InboundCorpNetwork",
+         "description": "",
+         "addresses": ["10.223.160.0/24", "10.223.161.0/24", "10.223.163.0/24"],
+         "accessLists": [0, 1, 2, 3]
+      },
+      {
+         "id": 1,
+         "name": "SNSW-Trusted-Networks",
+         "description": "Hosts in the trusted network",
+         "addresses": [
+            "49.255.214.232/29",
+            "49.255.214.224/29",
+            "49.255.214.200/29"
+         ],
+         "accessLists": [4, 5]
+      },
+      {
+         "id": 2,
+         "name": "New-Object-Group",
+         "description": "",
+         "addresses": ["192.168.0.0/16"],
+         "accessLists": []
+      }
+   ]
+}

@@ -1,0 +1,27 @@
+.add-new-item {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.list-items {
+  margin: 0;
+  padding: 5px;
+
+  .list-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+  }
+
+  .list-item--selected {
+      background: #17a2b8;
+      color: rgba(221, 7, 7, 0.918);
+      list-style: circle;
+  }
+
+  .remove-item {
+      cursor: pointer;
+  }
+}

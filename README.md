@@ -1,2 +1,0 @@
-# ReactReduxInteractiveFormApp
-Created with CodeSandbox
