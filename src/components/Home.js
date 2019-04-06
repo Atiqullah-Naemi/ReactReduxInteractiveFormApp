@@ -5,7 +5,7 @@ export const Home = () => {
    return (
       <div className="home">
          <Container>
-            <h1>Welcome to DC Automation</h1>
+            <h1>Welcome to Interactive Form</h1>
             <p>
                Please select an option from the left to inorder to display some
                content
